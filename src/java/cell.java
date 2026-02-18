@@ -21,14 +21,14 @@ public class cell{
         return col; 
     }
 
-    public int getColor(){ 
+    public char getColor(){ 
         return color; 
     }
 
     public boolean hasQueen(){
         return hasQueen; 
     }
-
+    
     public void setQueen(boolean value){ 
         this.hasQueen = value; 
     }

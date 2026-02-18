@@ -36,8 +36,10 @@ public class boardMatrix
     {
         return mat[i][j];
     }
+    
+    // Beberapa fungsi berikut merupakan hasil utilisasi Tubes 1 Algeo :D
 
-    public void debugboardMatrix(boardMatrix m) { // konsol
+    public void debugBoardMatrix(boardMatrix m) { // konsol
         if (m == null || m.mat == null) {
             System.out.println("(boardMatrix kosong atau tidak valid)");
             return;
@@ -84,11 +86,7 @@ public class boardMatrix
 
     public static String[] splitRow(String line) {
         line = line.trim();
-
-        if (line.contains(" ")) {
-            return line.split("\\s+");
-        }
-
+        line = line.replace(" ", ""); 
         return line.split("");
     }
     
@@ -147,7 +145,5 @@ public class boardMatrix
         }
 
         return board;
-
-    }
-    
+    }   
 }
